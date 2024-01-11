@@ -39,6 +39,8 @@ h3 {
     transition: all 0.2s;
 }
 
+
+
 .icon-container:hover {
     background: #555;
     cursor: pointer;
@@ -51,5 +53,31 @@ h3 {
 
     body {
         font-size: 1.2rem;
+    }
+}
+
+.toggle {
+    flex-grow: 1;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        margin: 1rem 10rem;
     }
 }
