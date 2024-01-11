@@ -68,6 +68,14 @@ li:hover {
     text-decoration: underline;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 1rem;
+    color: #b2b2b2c5;
+}
+
 @media screen and (min-width:1024px) {
     body {
         margin: 1rem 10rem;
@@ -85,6 +93,11 @@ li:hover {
 
     .navbar {
         column-gap: 1rem;
+    }
+
+    .footer {
+        margin: 2rem 0 1rem;
+
     }
 
 }
