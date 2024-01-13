@@ -19,6 +19,55 @@ body {
     transition: all 0.2s;
 }
 
+::-Webkit-Scrollbar {
+    Width: 5px;
+    /* Width Of The Entire Scrollbar */
+}
+
+/* Modify The Thumb */
+::-Webkit-Scrollbar-Thumb {
+    Background-Color: #999;
+    /* Color Of The Thumb */
+    Border-Radius: 6px;
+    /* Roundness Of The Thumb */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50fr 40fr;
+    row-gap: 1rem;
+
+}
+
+/* adding some asidebar for advertising */
+aside,
+main section {
+    border: 1px solid #ccc;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+figcaption {
+    padding: 0.5rem;
+}
+
+.card {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 2rem 1rem;
+    box-shadow: 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card figure img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+figure {
+    margin: 0;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -61,6 +110,7 @@ h2 {
 .navbar {
     list-style: none;
     column-gap: 2rem;
+    margin: 0 0 2rem;
 }
 
 li {
@@ -92,6 +142,10 @@ li:hover {
 
     .footer {
         margin: 2rem 0 1rem;
+    }
+
+    main {
+        grid-template-columns: 100fr;
     }
 
 }
